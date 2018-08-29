@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+
+  <title>Page Rough draft</title>
+
+</head>
+
+
+
+<div class="tab">
+
+
+  <button class="tablinks" onclick= "openpage (event , 'Home')" id="defaultOpen">
+  Home
+  </button>
+  
+    <div id="Home" type="radio" class="tabcontent">
+	  <br></br>
+	  <p>This is the Home tab.</p>
+	  <span onclick="this.parentElement.style.display='none'">x
+	  </span>
+    </div>
+	
+  <button class="tablinks" onclick="openpage (event , 'Management')">
+  Management
+  </button>
+  
+    <div id="Management" type="radio" class="tabcontent">
+	  <br></br>
+	  <p>This is the Management tab.</p>
+	  <span onclick="this.parentElement.style.display='none'">x
+	  </span>
+	</div>
+	
+	 <button class="tablinks" onclick= "openpage (event , 'Add New')" id="defaultOpen">
+  Add New
+  </button>
+  
+    <div id="Add New" type="radio" class="tabcontent">
+	  <br></br>
+	  <p>Add new Items to the table.</p>
+	  <span onclick="this.parentElement.style.display='none'">x
+	  </span>
+    </div>
+	
+	 <button class="tablinks" onclick= "openpage (event , 'Change Descriptive')" id="defaultOpen">
+  Change Descriptive
+  </button>
+  
+    <div id="Change Descriptive" type="radio" class="tabcontent">
+	  <br></br>
+	  <p>Change or update an existing Descriptive.</p>
+	  <span onclick="this.parentElement.style.display='none'">x
+	  </span>
+    </div>
+	
+	 <button class="tablinks" onclick= "openpage (event , 'Change Item')" id="defaultOpen">
+  Change Item
+  </button>
+  
+    <div id="Change Item" type="radio" class="tabcontent">
+	  <br></br>
+	  <p>Change or update an existing item.</p>
+	  <span onclick="this.parentElement.style.display='none'">x
+	  </span>
+    </div>
+	
+	 <button class="tablinks" onclick= "openpage (event , 'Delete Item')" id="defaultOpen">
+  Delete Item
+  </button>
+  
+    <div id="Delete Item" type="radio" class="tabcontent">
+	  <br></br>
+	  <p>Delete an existing Item.</p>
+	  <span onclick="this.parentElement.style.display='none'">x
+	  </span>
+    </div>
+	
+  <button class="tablinks" onclick= "openpage (event , 'Contact IT')">
+  Contact IT
+  </button>
+  
+    <div id="Contact IT" type="radio" class="tabcontent">
+	  <br></br>
+	  <p>This is where my contact info goes.</p>
+	  <span onclick="this.parentElement.style.display='none'">x
+	  </span>
+	  
+  <button class="tablinks" onclick= "openpage (event , 'Search')" id="defaultOpen">
+  Search
+  </button>
+  
+    <div id="Search" type="radio" class="tabcontent">
+	  <p>I should probably add a text entry of some sort here..</p>
+	  <span onclick="this.parentElement.style.display='none'">x
+	  </span>
+    </div>
+	
+	</div>
+ <style>
+ .tab {
+     overflow: hidden;
+     border: 1px solid #ccc;
+     background-color: #f1f1f1;
+ }
+
+ .tab button {
+     background-color: inherit;
+     float: left;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     padding: 14px 16px;
+     transition: 0.3s;
+ }
+
+ .tab button:hover {
+     background-color: #ddd;
+ }
+
+ .tab button.active {
+     background-color: #ccc;
+ }
+
+ .tabcontent {
+     display: none;
+     padding: 6px 12px;
+     border: 1px solid #ccc;
+     border-top: none;
+	 }
+  </style>
+  
+  <script>
+  function openpage(evt, page) {
+    var i, tabcontent, tablinks;
+
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    document.getElementById(page).style.display = "block";
+    evt.currentTarget.className += " active";
+    }
+	</script>
+  
+  <script>
+  document.getElementById("defaultOpen").click();
+  </script>
+</div>
+
+<body>
+
+ <img src="carbackground2.jpg" style=(100%)/>
+
+  <div style="background-color:lightblue">
+
+   <div>
+
+    <button>
+	
+    Add New
+    </button>
+
+   </div>
+
+   <div>
+
+   <button>
+   Change Descriptive
+   </button>
+
+   </div>
+
+  <div>
+
+   <button>
+   Change Item
+   </button>
+  
+  </div>
+
+  <div>
+
+   <button>
+   Delete Item
+   </button>
+   
+  </div>
+
+  <div>
+
+   <button>
+   Search
+   </button>
+
+  </div>
+
+</body>
+
+</html>
